@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Engineer Intern - CGI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header style="height: 20rem;">
+        <a href="index.html" class="back-button">&#8592; Back to Portfolio</a>
+    
+        <div class="header-content">
+            <h1 style="text-align: center;">Machine Learning Engineer Intern</h1>
+            <p>CGI (Emerging Technology Practices) | June 2024 – August 2024 | New Brunswick, NJ, USA</p>
+        </div>
+    </header>
+    
+    
+
+    <section class="carousel-container">
+        <button class="carousel-arrow left" onclick="navigateCarousel(-1)">&#10094;</button>
+
+        <h2>Key Responsibilities</h2>
+        <div class="sub-experience active">
+            <h4>Merck - Pharma Client</h4>
+            <p>Developed AI-driven solutions by integrating LangChain, OpenAI GPT APIs, and Retrieval-Augmented Generation (RAG) pipelines to streamline data retrieval and translation processes for a pharmaceutical client.</p>
+            <p>Utilized SpirePDF for structured text extraction and EasyOCR for unstructured elements, ensuring regulatory compliance and formatting integrity.</p>
+            <p>Hosted a Streamlit bot allowing users to upload PDFs for translation into selected languages.</p>
+        </div>
+
+        <div class="sub-experience">
+            <h4>Charter Telecommunication</h4>
+            <p>Automated ETL pipelines using Python and SQL, improving data processing speed by 50%.</p>
+            <p>Developed a text-to-SQL chatbot feature enabling natural language queries for non-technical users.</p>
+            <p>Optimized large datasets using SQL Workbench for efficient querying and analytics.</p>
+        </div>
+
+        <div class="sub-experience">
+            <h4>NJDEP - Public Sector Client</h4>
+            <p>Designed a Meta-Data Lineage Tracker to trace data flow and origin across datasets, visualized via a dynamic Streamlit UI.</p>
+            <p>Aligned AI-driven lineage tracking with government data governance protocols and compliance standards.</p>
+        </div>
+        <button class="carousel-arrow right" onclick="navigateCarousel(1)">&#10095;</button>
+    </section>
+
+    <script>
+        let currentIndex = 0;
+        const experiences = document.querySelectorAll('.sub-experience');
+
+        function navigateCarousel(direction) {
+            experiences[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + direction + experiences.length) % experiences.length;
+            experiences[currentIndex].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

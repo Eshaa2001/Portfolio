@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Analyst Intern - IIIT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header style="height: 20rem;">
+        <a href="index.html" class="back-button">&#8592; Back to Portfolio</a>
+        <div class="header-content">
+            <h1 style="text-align: center;">Research Analyst Intern</h1>
+            <p>International Institute of Information Technology | May 2022 – Sep 2022 | India</p>
+        </div>
+    </header>
+
+    <section class="carousel-container">
+        <!-- <button class="carousel-arrow left" onclick="navigateCarousel(-1)">&#10094;</button> -->
+
+        <h2>Key Responsibilities</h2>
+        <div class="sub-experience active">
+            <h4>Internet of Things (IoT) & Research Lab</h4>
+                <p>Curated manually annotated plant datasets comprising 280+ images to examine abiotic-stress detection in chili leaves, focusing on water-stress conditions and their impact on plant health.</p>
+                <p>Utilized MATLAB for image segmentation and augmentation, applying preprocessing techniques to enhance image quality and increase the diversity of the dataset for more robust model training.</p>
+                <p>Designed and implemented an image segmentation algorithm in Python to isolate affected regions of chili leaves, ensuring precise detection of stress indicators.</p>
+                <p>Developed and fine-tuned a Convolutional Neural Network (CNN) model using ResNet-50 architecture, achieving an impressive 98% accuracy in classifying stress levels.</p>
+                <p>Employed data augmentation techniques such as rotation, scaling, and flipping to mitigate overfitting and improve model generalization across diverse environmental conditions.</p>
+                <p>Generated and analyzed a confusion matrix to evaluate model performance, identifying misclassifications and refining the model to enhance accuracy and detection capabilities.</p>
+            </div>
+       
+        <!-- <button class="carousel-arrow right" onclick="navigateCarousel(1)">&#10095;</button> -->
+    </section>
+
+   
+    <script>
+        let currentIndex = 0;
+        const experiences = document.querySelectorAll('.sub-experience');
+
+        function navigateCarousel(direction) {
+            experiences[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + direction + experiences.length) % experiences.length;
+            experiences[currentIndex].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Trainee - SAIL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header style="height: 20rem;">
+        <a href="index.html" class="back-button">&#8592; Back to Portfolio</a>
+        <div class="header-content">
+            <h1 style="text-align: center;">Software Trainee</h1>
+            <p>Steel Authority of India Limited (SAIL) | July 2022 – August 2022 | India</p>
+        </div>
+    </header>
+    
+
+    <section class="carousel-container">
+        <!-- <button class="carousel-arrow left" onclick="navigateCarousel(-1)">&#10094;</button> -->
+        <h2>Key Responsibilities</h2>
+        <div class="sub-experience active">
+            <h4>C&IT Department</h4>
+            <p><strong>Implemented New Features Based on Functional Requirement Documents (FRD):</strong> Designed and integrated new functionalities into existing software applications, reducing manual processes by 75% and enhancing overall system efficiency.</p>
+            <p><strong>Automated CI/CD Pipelines:</strong> Streamlined deployment workflows by automating CI/CD pipelines using tools like Jenkins and GitHub Actions, ensuring consistent, efficient, and error-free software releases.</p>
+            <p><strong>Front-End Design Using Wireframes in Figma:</strong> Created interactive wireframes and prototypes using Figma to visualize and refine UI/UX designs, ensuring user-friendly interfaces aligned with business goals.</p>
+            <p><strong>Developed Cross-Platform Applications Using Flutter:</strong> Leveraged Flutter and Dart to build responsive, cross-platform mobile applications, integrating APIs and optimizing performance for both Android and iOS platforms.</p>
+        </div>
+        <!-- <button class="carousel-arrow right" onclick="navigateCarousel(1)">&#10095;</button> -->
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Portfolio</a></p>
+    </footer>
+    <script>
+        let currentIndex = 0;
+        const experiences = document.querySelectorAll('.sub-experience');
+
+        function navigateCarousel(direction) {
+            experiences[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + direction + experiences.length) % experiences.length;
+            experiences[currentIndex].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

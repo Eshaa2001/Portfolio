@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate Research Assistant - Rutgers University</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header style="height: 20rem;">
+        <a href="index.html" class="back-button">&#8592; Back to Portfolio</a>
+        <div class="header-content">
+            <h1 style="text-align: center;">Graduate Research Assistant</h1>
+            <p>Rutgers University | Mar 2024 – May 2024 | Camden, NJ, USA</p>
+        </div>
+    </header>
+    
+    <section class="carousel-container">
+        <!-- <button class="carousel-arrow left" onclick="navigateCarousel(-1)">&#10094;</button> -->
+
+        <h2>Key Responsibilities</h2>
+        <div class="sub-experience active">
+            <h4>Computational & Integrative Biology Lab</h4>
+            <p>Performed a systematic review and meta-analysis on ecological precipitation data, synthesizing findings from large biodiversity datasets.</p>
+            <p>Extracted, cleaned, and analyzed data on sample sizes, environmental factors, and precipitation patterns, improving data accuracy by 30% through cross-validation techniques.</p>
+            <p>Utilized Python and statistical methods to identify trends and correlations in biodiversity data, contributing to climate impact assessments.</p>
+            <p>Developed quantitative timescale reports providing actionable insights for ecological research and biodiversity conservation strategies.</p>
+            <p>Collaborated with interdisciplinary teams to integrate ecological data into broader environmental research frameworks, enhancing the impact of findings.</p>
+        </div>
+
+        <!-- <button class="carousel-arrow right" onclick="navigateCarousel(1)">&#10095;</button> -->
+    </section>
+   
+    <script>
+        let currentIndex = 0;
+        const experiences = document.querySelectorAll('.sub-experience');
+
+        function navigateCarousel(direction) {
+            experiences[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + direction + experiences.length) % experiences.length;
+            experiences[currentIndex].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
