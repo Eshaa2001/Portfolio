@@ -10,7 +10,7 @@ body {
 
 header {
     background-size: cover;
-    background-image: url('./Images/header_bg.jpeg');
+    background-image: url('../../Images/header_bg.jpeg');
     color: white;
     padding: 20px 0;
     position: sticky;
