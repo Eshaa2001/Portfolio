@@ -33,25 +33,30 @@
     <section id="work-experience-container">
         <h2 id="work-experience-title">Work Experience</h2>
         <div id="work-experience">
+            <a href="florida_blue.html" class="experience">
+                <h3>Data Engineer</h3>
+                <p><strong>Florida Blue</strong> | May 2025 – Current | Jacksonville, Florida, USA</p>
+            </a>
+
             <a href="cgi_intern.html" class="experience">
                 <h3>Machine Learning Engineer</h3>
                 <p><strong>CGI (Emerging Technology Practices)</strong> | June 2024 – August 2024 | New Brunswick, NJ, USA</p>
             </a>
     
             <a href="rutgers_assistant.html" class="experience">
-                <h3>Program Analyst</h3>
+                <h3>Data Analyst</h3>
                 <p><strong>Rutgers University</strong> | Jan 2024 – May 2024 | Camden, NJ, USA</p>
             </a>
     
             <a href="iiit_research.html" class="experience">
-                <h3>Research Analyst Intern</h3>
+                <h3>Research Analyst</h3>
                 <p><strong>International Institute of Information Technology</strong> | May 2022 – Sep 2022 | India</p>
             </a>
     
-            <a href="sail_trainee.html" class="experience">
+            <!-- <a href="sail_trainee.html" class="experience">
                 <h3>Software Trainee</h3>
                 <p><strong>Steel Authority of India Limited (SAIL)</strong> | July 2021 – August 2021 | India</p>
-            </a>
+            </a> -->
         </div>
     </section>
     
@@ -68,6 +73,23 @@
     <section id="projects">
         <h2>Projects</h2>
         <ul class="projects">
+            <li class="project-item">
+                <img src="Images/Hippocampal-MRI.png" alt="EMPOWER - A Women-centric Application" class="project-image">
+                <div class="project-content">
+                    <h3>Hippocampal MRI Segmentation for Brain Age Analysis using nnU-Net</h3>
+                    <ul class="project-details">
+                        <li>Implemented a fully automated pipeline using nnU-Net for segmenting the hippocampus from high-resolution 3T T1-weighted MRI scans, enabling subject-level 
+                            volumetric analysis without manual tuning or architectural redesign.</li>
+                        <li>Comparative Model Evaluation:
+                            <ul>
+                                <li>Benchmarked segmentation performance against atlas-based methods, 2D/3D U-Net variants, and UGCapsNet, highlighting nnU-Net's superiority in Dice similarity and anatomical accuracy across multiple preprocessing configurations.</li>
+                                <li>Performed volumetric deviation analysis against normative percentiles (5th–95th) and visual overlays on native MRIs to flag at-risk subjects. Emphasized qualitative alignment, clinical thresholds, and region-specific shrinkage patterns.  </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="https://github.com/Eshaa2001/BrainAge" target="_blank"><button class="github-button">Check it out</button></a>
+                </div>
+            </li>
             <li class="project-item">
                 <img src="Images/Interaction.png" alt="Drug Interaction Insights Bot" class="project-image">
                 <div class="project-content">
@@ -171,6 +193,7 @@
                     <a href="https://github.com/your-repo/empower-app" target="_blank"><button class="github-button">Check it out</button></a>
                 </div>
             </li>
+            
         </ul>
     </section>
     

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header style="height: 20rem;">
+        <a href="index.html" class="back-button">&#8592; Back to Portfolio</a>
+
+        <div class="header-content">
+            <h1 style="text-align: center;">Data Engineer</h1>
+            <p>Florida Blue| May 2025 – Current | Jacksonville, Florida, USA</p>
+        </div>
+    </header>
+
+
+
+    <section class="carousel-container">
+
+        <h2>Key Responsibilities</h2>
+        <div class="sub-experience active">
+            <!-- <h4>Merck - Pharma Client</h4> -->
+            <p>Engineered scalable ETL pipelines to process high-volume claims and enrollment datasets, improving data
+                reliability for predictive health analytics.</p>
+
+            <p>Optimized data integration from disparate sources (EHRs, claims, enrollment logs), reducing preprocessing
+                latency by 30%.</p>
+
+            <p>Collaborated across Agile teams to build data-centric UI workflows, validating health and coverage data
+                for 500K+ users.</p>
+
+            <p>Minimized downstream errors by 22% via real-time validations and smart rule-based logic on dynamic forms.
+            </p>
+
+            <p>Automated ingestion pipelines and enhanced structured data reliability, supporting analytics initiatives
+                across the organization.</p>
+
+            <p>Collaborated across MX (Member Experience) and Application Migration teams to support seamless migration
+                of functionalities across platforms.</p>
+
+            </p>
+        </div>
+    </section>
+
+    <script>
+        let currentIndex = 0;
+        const experiences = document.querySelectorAll('.sub-experience');
+
+        function navigateCarousel(direction) {
+            experiences[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + direction + experiences.length) % experiences.length;
+            experiences[currentIndex].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
